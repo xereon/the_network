@@ -1,0 +1,227 @@
+* {
+    font-family: "Droid Sans", sans-serif;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+
+}
+fieldset p a {
+    color: #3391ff;
+    padding: 10px;
+    background-color: #fff;
+    font-size: large;
+}
+.container {
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    background-color: white;
+}
+
+.chat_box {
+    margin-top: 10px;
+}
+
+.chatdata span a {
+    z-index: 1;
+}
+
+.chat_input_wrap {
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    text-align: center;
+    background-color: white;
+    height: 81px;
+    width: 80%;
+    height: 0px;
+}
+
+#chatForm input[type="text"], textarea, #chatForm {
+    border-radius: 4px;
+    resize: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.chat_data span:first-child{
+    bottom: -3px;
+    position: relative;
+}
+.chat_data {
+    width: 100%;
+    padding: 5px;
+}
+.total_messages {
+    padding: 25px 0px 15px 0px;
+}
+.chat_data span:nth-child(1) {                          /************ chat NAME *************/
+    color: #3f93ab;
+    font-size: large;
+}
+.chat_data span:nth-child(2) {                          /************ chat TEXT *************/
+    color: rgb(172, 172, 172);
+}
+.chat_data span:nth-child(3) {                          /************ chat TIME *************/
+    float: right;
+    color: rgb(172, 172, 172);
+    font-size: small;
+}
+
+input[type='text'] {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgb(193, 193, 193);
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 0 0 0 10px;
+}
+
+textarea {
+    /* width: 99%; */
+    height: 87px;
+    border: 1px solid rgb(193, 193, 193);
+    border-radius: 5px;
+    padding: 10px 0 0 10px;
+}
+
+textarea:hover,
+input[type='text']:hover,
+textarea:focus,
+input[type='text']:focus
+{
+    background-color: lightyellow;                      /************ INPUT COLOUR *************/
+}
+
+input[type="logout"]:hover, input[type='submit']:hover {
+    color: #1072e2;
+    background-color: #ffffff;
+}
+
+.send_button {
+    margin: 0 auto;
+    text-align: center;
+    color: #1072e2;
+    background-color: #fff;
+    width:auto;
+    height: 0px;
+}
+input[type="logout"]{
+  border: 1px solid grey;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  background-color: #5789ac;
+  font-weight: 700;
+  padding: 15px 0px 15px 0px;
+  border-radius: 5px;
+  margin: 10px;
+}
+input[type="submit"] {
+  /* width: 80vw; */
+  color: red;
+  background-color: #fafafa;
+  border: 1px solid grey;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+  color: black;
+  background-color: #fff;
+  font-weight: 700;
+  padding: 15px 15px 15px 15px;
+  cursor: pointer;
+}
+
+
+/****************************   @media style - screen and (min-width: 480px **********************/
+
+@media screen and (min-width: 420px) {
+
+    .form_register_a {
+        width: 280px;
+    }
+    .form_register_b {
+        width: 280px;
+        float: left;
+    }
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+button {
+    font-size: 16px;
+}
+#openMenuBtn {
+    position: relative;
+    /* top: -104px; */
+    margin: 0px;
+}
+#settingsMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(42, 127, 190, 0.89);
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    z-index: 9000;
+}
+
+#settingsMenu.open {
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 9000;
+}
+
+#settingsMenu h2 {
+    margin-bottom: 20px;
+    z-index: 9000;
+}
+
+#settingsMenu label {
+    /* margin-bottom: 10px; */
+    z-index: 9000;
+}
+
+#settingsMenu button {
+    margin-top: 20px;
+    z-index: 9000;
+}
+/* 
+      /* Styles for the button */
+      .logo {
+        cursor: pointer;
+        z-index: 9000;
+        /* Add your logo styles here */
+    }
+
+    /* Styles for the settings menu
+    #settingsMenu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 300px;
+        background-color: #f1f1f1;
+        padding: 20px;
+        box-shadow: -2px 0px 6px rgba(0, 0, 0, 0.2);
+        transform: translateX(100%);
+        transition: transform 0.3s;
+    } */
+
+    #settingsMenu.open {
+        transform: translateX(0);
+    } 

@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: "Droid Sans", sans-serif;
+}
+
+body {
+    /*background-color: silver;*/
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+    background-color: white;
+}
+
+.chat_box {
+    /*padding: 20px;*/
+    margin-top: 160px;
+}
+
+
+.chat_input_wrap {
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    text-align: center;
+    background-color: white;
+    height: 81px;
+    width: 80%;
+}
+
+.chat_data {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid silver;
+}
+
+.chat_data span:nth-child(1) {                          /************ chat NAME *************/
+    color: #3f93ab;
+    font-size: large;
+}
+.chat_data span:nth-child(2) {                          /************ chat TEXT *************/
+    color: #333333;
+}
+.chat_data span:nth-child(3) {                          /************ chat TIME *************/
+    float: right;
+    color: grey;
+    font-size: small;
+}
+
+input[type='text'] {
+    width: 100%;
+    height: 40px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 0 0 0 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 60px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 10px 0 0 10px;
+}
+
+textarea:hover,
+input[type='text']:hover,
+textarea:focus,
+input[type='text']:focus
+{
+    background-color: lightyellow;                      /************ INPUT COLOUR *************/
+}
+
+input[type='submit'] {
+    width: auto;
+    border: 1px solid grey;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 26px;
+    color: white;
+    background-color: #92a7b6;
+    font-weight: 700;
+    padding: 0 15px 0 15px;
+}
+
+input[type='submit']:hover {
+    color: #ffffff;
+    background-color: #3f93ab;
+}
+
+.send_button {
+    margin: 0 auto;
+    text-align: center;
+}

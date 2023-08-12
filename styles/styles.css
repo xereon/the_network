@@ -1,0 +1,498 @@
+
+
+.menu-icon {
+
+  content: "\01F754";
+
+  font-size: 4.5rem;
+
+  font-weight: bold; 
+
+  /* transform: rotate(45deg); */
+
+}
+
+
+.menu-content{
+  text-align: center;
+  /* width:250px; */
+}
+
+
+.night-mode{
+  background-color:#323232;
+  color:#fff;
+
+}
+
+/* .night-mode h1::before{
+
+  content: "\01F754";
+
+  font-size: 4.5rem;
+
+  font-weight: bold;
+
+} */
+
+.members-list{
+
+  margin-top:20px
+
+}
+
+.members-list h2{
+
+  font-size:18px
+
+}
+
+.members-list ul{
+
+  list-style:none;
+
+  padding:0;
+
+  margin:0
+
+}
+
+.members-list li{
+
+  margin-bottom:5px
+
+}
+
+span[id^=date-]{
+
+  font-size:11px
+
+}
+
+#date,span[id^=time-]{
+
+  font-size:10px;
+
+  top:-5px;
+
+  position:relative
+
+}
+
+.night-mode .close-btn{
+
+  color:#fff
+
+}
+
+.close-btn{
+
+  position:absolute;
+
+  top:10px;
+
+  right:10px;
+
+  font-size:24px;
+
+  background:0 0;
+
+  border:none;
+
+  color:#333;
+
+  cursor:pointer;
+
+  text-align:right;
+
+  width:201px
+
+}
+
+button{
+
+  font-family: Verdana, Arial ,sans-serif;
+  font-weight: 700;
+  font-size:large;
+  border-radius: 15px;
+}
+
+
+
+ /* Apply general styles for select input */
+
+ select#voice-select {
+
+  width: 100%;
+
+  max-width: 200px;
+
+  padding: 8px;
+
+  font-size: 16px;
+
+  border: 1px solid #ccc;
+
+  border-radius: 4px;
+
+  background-color: #fff;
+
+}
+
+
+
+/* Style the dropdown arrow (optional) */
+
+select#voice-select::-ms-expand {
+
+  display: none; /* Remove the default arrow in Microsoft browsers */
+
+}
+
+select#voice-select::after {
+
+  content: "\25BC"; /* Unicode down-arrow symbol */
+
+  position: absolute;
+
+  right: 10px;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  pointer-events: none;
+
+}
+
+
+
+/* Style options within the dropdown */
+
+select#voice-select option {
+
+  padding: 8px;
+
+}
+
+
+
+/* Style the hover effect (optional) */
+
+select#voice-select option:hover {
+
+  background-color: #f2f2f2;
+
+}
+
+    /* Style the color input element */
+
+    input[type="color"] {
+
+        appearance: none;
+
+        border: none;
+
+        width: 24px;
+
+        height: 24px;
+
+        border-radius: 50%;
+
+        cursor: pointer;
+
+        vertical-align: middle;
+
+        padding: 0;
+
+    }
+
+
+
+    /* Style the color picker arrow (optional) */
+
+    input[type="color"]::-webkit-color-swatch-wrapper {
+
+        padding: 0;
+
+    }
+
+    input[type="color"]::-webkit-color-swatch {
+
+        border: none;
+
+        border-radius: 50%;
+
+        box-shadow: none;
+
+    }
+
+
+
+    /* Optional hover effect for the color picker */
+
+    input[type="color"]:hover {
+
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+
+    }
+
+
+
+    /* Optional transition for smooth color picker appearance (you can adjust the duration) */
+
+    input[type="color"] {
+
+        transition: box-shadow 0.2s ease;
+
+    }
+
+
+
+
+
+
+
+/* 
+    .night-mode h1::before,h1::before{
+
+      content:"";
+
+      display:inline-block;
+
+      width:50px;
+
+      height:50px;
+
+      background-size:cover;
+
+      margin-right:10px
+
+    } */
+
+    .menu-toggle-label span:first-child{
+
+      transform-origin:top left
+
+    }
+
+    .menu-toggle-label span:last-child{
+
+      transform-origin:bottom left
+
+    }
+
+    .toggle-switch-label{
+
+      display:block;
+
+      width:40px;
+
+      height:20px;
+
+      background-color:#ccc;
+
+      border-radius:10px;
+
+      cursor:pointer;
+
+      position:relative
+
+    }
+
+    .toggle-switch-label:after{
+
+      content:'';
+
+      display:block;
+
+      width:16px;
+
+      height:16px;
+
+      background-color:#fff;
+
+      border-radius:50%;
+
+      position:absolute;
+
+      top:2px;
+
+      left:2px;
+
+      transition:transform .3s ease-in-out
+
+    }
+
+    .toggle-switch:checked+.toggle-switch-label{
+
+      background-color:#4caf50
+
+    }
+
+    .toggle-switch:checked+.toggle-switch-label:after{
+
+      transform:translateX(20px)
+
+    }
+/* 
+    h1::before{
+
+        background-image:url("logo_new.png")
+    /* content: "\01F754";
+
+      font-size: 4.5rem;
+
+      font-weight: bold;
+
+      color: #000;
+      }
+
+      /* .night-mode{
+
+        background-color:#333; 
+
+        color: #323232;
+
+      } 
+
+      .night-mode h1::before{
+
+      background-image:url("logo_new_.png");
+
+    /* content: "\01F754";
+
+      font-size: 4.5rem;
+
+      font-weight: bold;
+
+      color: #fff;
+
+          } */
+
+    .members-list{
+
+      margin-top:20px
+
+    }
+
+    .members-list h2{
+
+      font-size:18px
+
+    }
+
+    .members-list ul{
+
+      list-style:none;
+
+      padding:0;
+
+      margin:0
+
+    }
+
+    .members-list li{
+
+      margin-bottom:5px
+
+    }
+
+    span[id^=date-]{
+
+      font-size:11px
+
+    }
+
+    #date,span[id^=time-]{
+
+      font-size:10px;
+
+      top:-5px;
+
+      position:relative
+
+    }
+
+    .night-mode .close-btn{
+
+      color:#fff
+
+    }
+
+    .night-mode textarea {
+        border-color: rgb(122, 167, 196);
+        background-color: #323232;
+        color: #f2f2f2;
+      }
+    textarea {
+      padding: 5px;
+    }
+
+/********************* delete toggle switch style *****************************/
+#deleteToggle {
+  appearance: none;
+  width: 40px;
+  height: 20px;
+  background: #ccc;
+  outline: none;
+  border-radius: 20px;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.3s;
+}
+
+#deleteToggle:checked {
+  background: #4caf50;
+}
+
+#deleteToggle::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 20px;
+  left: 0;
+  transition: left 0.3s;
+}
+
+#deleteToggle:checked::before {
+  left: 20px;
+}
+
+
+
+/*********************** all switch styling the same ***************************/
+
+
+input[type="checkbox"] {
+  appearance: none;
+  width: 40px;
+  height: 20px;
+  background: #ccc;
+  outline: none;
+  border-radius: 20px;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.3s;
+}
+
+input[type="checkbox"]:checked {
+  background: #4caf50;
+}
+
+input[type="checkbox"]::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 20px;
+  left: 0;
+  transition: left 0.3s;
+}
+
+input[type="checkbox"]:checked::before {
+  left: 20px;
+}

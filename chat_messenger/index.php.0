@@ -1,0 +1,47 @@
+<?php
+include 'db.php';
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Live Chat</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" media="all">
+    <!--script src="script.js"></script-->
+</head>
+<body>
+<div class="container">
+    <div class="chat_box">
+        <div id="chat"></div>
+        <div class="chat_input_wrap">
+            <form method="post" action="">
+                <input required="required" type="text" name="name" placeholder="Enter name" maxlength="255" />
+                <textarea required="required" name="msg" placeholder="Enter message" maxlength="255"></textarea>
+                <div class="send_button">
+                    <input type="submit" name="submit" value="Send" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<?php
+global $connect;
+
+if (isset($_POST['submit'])) {
+    $name = $_POST['name'];
+    $msg = $_POST['msg'];
+
+    $query = "INSERT INTO chat (name, msg) VALUES (?, ?)";
+    $stmt = $connect->prepare($query);
+    $stmt->bind_param("ss", $name, $msg);
+    $stmt->execute();
+    $stmt->close();
+
+    echo "<embed type='audio/mp3' loop='false' src='sound.mp3' hidden='true' autoplay='true' />";
+}
+?>
+
+</body>
+</html>

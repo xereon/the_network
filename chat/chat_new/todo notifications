@@ -1,0 +1,58 @@
+Certainly! To implement a notification system in your chat script, you can use JavaScript and AJAX to periodically check for new messages and display a notification to the user if there are any unread messages. Here's an example code snippet to get you started:
+
+html
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Function to check for new messages
+            function checkMessages() {
+                $.ajax({
+                    url: 'check_messages.php', // PHP script to check for new messages
+                    method: 'POST',
+                    success: function(response) {
+                        if (response === 'unread') {
+                            // Display a notification if there are unread messages
+                            $('#notification').text('You have unread messages');
+                            // You can also play a sound or show a browser notification here
+                        } else {
+                            // Clear the notification if there are no unread messages
+                            $('#notification').text('');
+                        }
+                    }
+                });
+            }
+
+            // Call the checkMessages function every 5 seconds
+            setInterval(checkMessages, 5000);
+        });
+    </script>
+</head>
+<body>
+    <h1>Chat</h1>
+    <div id="notification"></div>
+    <!-- Rest of your chat interface -->
+</body>
+</html>
+
+
+You would need to create the check_messages.php script that interacts with your database and checks for unread messages. Here's a basic example of what check_messages.php could look like:
+
+php
+
+<?php
+// Check for unread messages in the database
+// Replace this with your own database connection and query logic
+$unreadMessages = 5; // Example: number of unread messages retrieved from the database
+
+if ($unreadMessages > 0) {
+    echo 'unread';
+} else {
+    echo '';
+}
+?>
+

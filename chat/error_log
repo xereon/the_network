@@ -1,0 +1,15 @@
+[29-Jul-2023 17:32:54 Australia/Sydney] PHP Warning:  Trying to access array offset on value of type null in /home/concise1/public_html/chat_new/home.php on line 64
+[29-Jul-2023 17:36:47 Australia/Sydney] PHP Warning:  Trying to access array offset on value of type null in /home/concise1/public_html/chat_new/home.php on line 64
+[29-Jul-2023 18:38:01 Australia/Sydney] PHP Warning:  Undefined array key "user_email" in /home/concise1/public_html/chat_new/home.php on line 58
+[29-Jul-2023 18:38:01 Australia/Sydney] PHP Warning:  Trying to access array offset on value of type null in /home/concise1/public_html/chat_new/home.php on line 64
+[29-Jul-2023 18:38:43 Australia/Sydney] PHP Warning:  Trying to access array offset on value of type null in /home/concise1/public_html/chat_new/home.php on line 64
+[29-Jul-2023 18:38:55 Australia/Sydney] PHP Warning:  Trying to access array offset on value of type null in /home/concise1/public_html/chat_new/home.php on line 64
+[29-Jul-2023 18:53:42 Australia/Sydney] PHP Warning:  Undefined array key "user_email" in /home/concise1/public_html/chat_new/home.php on line 58
+[29-Jul-2023 18:53:42 Australia/Sydney] PHP Warning:  Trying to access array offset on value of type null in /home/concise1/public_html/chat_new/home.php on line 64
+[29-Jul-2023 19:30:37 Australia/Sydney] PHP Warning:  Undefined array key "user_email" in /home/concise1/public_html/chat_new/home.php on line 58
+[29-Jul-2023 19:30:37 Australia/Sydney] PHP Warning:  Trying to access array offset on value of type null in /home/concise1/public_html/chat_new/home.php on line 64
+[29-Jul-2023 19:33:20 Australia/Sydney] PHP Warning:  Trying to access array offset on value of type null in /home/concise1/public_html/chat_new/home.php on line 64
+[29-Jul-2023 19:34:15 Australia/Sydney] PHP Warning:  Trying to access array offset on value of type null in /home/concise1/public_html/chat_new/home.php on line 64
+[29-Jul-2023 19:34:55 Australia/Sydney] PHP Warning:  Trying to access array offset on value of type null in /home/concise1/public_html/chat_new/home.php on line 64
+[29-Jul-2023 19:36:15 Australia/Sydney] PHP Warning:  Trying to access array offset on value of type null in /home/concise1/public_html/chat_new/home.php on line 64
+[29-Jul-2023 19:36:34 Australia/Sydney] PHP Warning:  Trying to access array offset on value of type null in /home/concise1/public_html/chat_new/home.php on line 64
